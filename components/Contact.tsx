@@ -12,8 +12,11 @@ export default function Contact() {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
+    const { name, email, message } = formData;
+    const whatsAppNumber = '919435553309'
+    const text = `New message from your portfolio website:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`
+    const url = `https://wa.me/${whatsAppNumber}?text=${text}`
+    window.open(url, '_blank')
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -122,6 +125,7 @@ export default function Contact() {
 
               <motion.button
                 type="submit"
+                onClick={handleSubmit}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-black text-yellow-400 px-6 py-4 rounded-full cartoon-border cartoon-hover cartoon-active flex items-center justify-center gap-2 text-xl"
