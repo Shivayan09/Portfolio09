@@ -16,13 +16,13 @@ export default function Projects() {
             codeUrl: 'https://github.com/Shivayan09/Dashifyy',
         },
         {
-            title: 'Codemeter',
-            description: 'A unified platform to check your coding stats accross multiple coding platforms',
+            title: 'Vector',
+            description: 'A context based social media platform',
             image: 'https://images.unsplash.com/photo-1623679072629-3aaa0192a391?...',
             tags: ['React', 'Tailwind', 'APIs'],
             rotation: '-rotate-2',
-            demoUrl: 'https://codemeter-5be63.web.app/',
-            codeUrl: 'https://github.com/Shivayan09/CodeMeter',
+            demoUrl: 'https://vector-lac.vercel.app/',
+            codeUrl: 'https://github.com/Shivayan09/Vector',
         },
         {
             title: 'Astralab',
